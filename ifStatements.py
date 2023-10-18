@@ -10,15 +10,27 @@
 
 # print(like)
 
-temp = 14
+# temp = 14
 
-themo = 15
-print(themo)
+# themo = 15
+# print(themo)
 
-if temp >= 15:
-    themo += 5
+# if temp >= 15:
+#     themo += 5
 
-elif temp <= 15:
-    themo -= 5
+# elif temp <= 15:
+#     themo -= 5
 
-print(themo)
+# print(themo)
+
+Time = "Night"
+Sleepy = False
+Pajamas = "Off"
+
+
+if Time == "Night" and Sleepy == True:
+    Pajamas = "On"
+elif Time == "Day" or Time == "Morning" and Sleepy == False:
+    Pajamas = "Off"
+
+print(f"pajamas {Pajamas}")
