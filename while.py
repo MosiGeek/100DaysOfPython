@@ -47,13 +47,15 @@ height = 5000
 speed = 50
 time = 0
 
+print("HEIGHT","TIME",sep="\t")
+
 while(height>0):
     height = height - speed
     print(height,end="\t")
     time = time + 1
     print(time)
     
-
 print("********************************")
+
 print(height,end="\t")
 print(time)
