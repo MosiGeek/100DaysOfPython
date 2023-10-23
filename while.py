@@ -18,13 +18,28 @@
 #     counter += 1
 
 
-counter = 1
-Sum = 0
+# counter = 1
+# Sum = 0
 
-while (counter<=10):
-    Sum = Sum + counter
-    print(counter)
-    counter+=1
+# while (counter<=10):
+#     Sum = Sum + counter
+#     print(counter)
+#     counter+=1
 
-print("***************************************************")
-print(Sum)
+# print("***************************************************")
+# print(Sum)
+
+
+letters = ["a","b","c","d"]
+
+# printing the list using the for loop
+# for letter in letters:
+#     print(letter)
+
+# printing the list using the while loop
+counter = 0
+
+while counter < len(letters):
+    print(letters[counter])
+    counter += 1
+    
