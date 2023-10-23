@@ -37,9 +37,23 @@ letters = ["a","b","c","d"]
 #     print(letter)
 
 # printing the list using the while loop
-counter = 0
+# counter = 0
 
-while counter < len(letters):
-    print(letters[counter])
-    counter += 1
+# while counter < len(letters):
+#     print(letters[counter])
+#     counter += 1
     
+height = 5000
+speed = 50
+time = 0
+
+while(height>0):
+    height = height - speed
+    print(height,end="\t")
+    time = time + 1
+    print(time)
+    
+
+print("********************************")
+print(height,end="\t")
+print(time)
