@@ -1,4 +1,4 @@
-row="_"
+row=" "
 col="|"
 
 for i in range(5):
@@ -6,9 +6,12 @@ for i in range(5):
         # print("  |  |  ")
         for j in range(5):
             if j%2 == 0:
-                print("  ",end="\t")
+                if j != 4:
+                    print(row,end="")
+                else:
+                    print(row)
             else:
-                print("|",end="")    
+                print(col,end="")    
     else:
-        print("________")
+        print("_____")
  
