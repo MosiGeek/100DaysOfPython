@@ -9,9 +9,9 @@ for i in range(5):
                 if j != 4:
                     print(row,end="")
                 else:
-                    print(row)
+                    print(row,end="")
             else:
-                print(col,end="")    
+                print(col)    
     else:
         print("_____")
  
