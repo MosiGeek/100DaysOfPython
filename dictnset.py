@@ -10,11 +10,11 @@
 # if "element1" in Sets:
 #     print("Yes")
 
-countryList = []
+# countryList = []
 
-for country in range(5):
-    getCountry = str(input("Enter your motherland : "))
-    countryList.append(getCountry)
+# for country in range(5):
+#     getCountry = str(input("Enter your motherland : "))
+#     countryList.append(getCountry)
     
 # # set keyword used to convert one data type to a set   
 # countrySet = set(countryList)
@@ -35,6 +35,14 @@ for country in range(5):
 # Dictionary = {"Key":"Value","Key1":"Value2"}
 
 # countyDict = {"Zambeziland":2,"Chinaland":5,"Somalia":0,"Bechuanaland":3}
+
+countryList = []
+
+for country in range(5):
+    getCountry = str(input("Enter your motherland : "))
+    countryList.append(getCountry)
+
+
 countyDict = {}
 
 # cool thing about a dictionary is that if an item does not exist it doesnt throw an error, rather it creates the item
@@ -45,4 +53,5 @@ for country in countryList:
     else:
         countyDict[country] = 1
 
-print(countyDict)
+# we access the values of a dictionary through a key 
+print(countyDict["India"])
