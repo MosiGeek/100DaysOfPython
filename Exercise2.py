@@ -10,4 +10,11 @@ BlackShoes = {
     38:0
 }
 
-print(BlackShoes)
+while(True):
+    purchaseSize = int(input("Which shoe size would you like to buy? :\n"))
+    
+    if BlackShoes[purchaseSize] in BlackShoes:
+        BlackShoes[purchaseSize] -= 1
+    else:
+        print("nothing here")
+        break
