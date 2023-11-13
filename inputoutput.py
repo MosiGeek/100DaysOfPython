@@ -12,11 +12,15 @@
 # print(str(age)+"1")
 
 listOfNums = []
+avg = 0
 print(listOfNums)
 
 for i in range(5):
     val = int(input("Gimme an interger: "))
     listOfNums.append(val)
 
+# average score 
 for i in range(len(listOfNums)):
-    print(listOfNums[i])
+    avg += listOfNums[i]
+
+print(round(avg/len(listOfNums)))
