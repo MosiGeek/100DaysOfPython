@@ -17,12 +17,13 @@ avg = 0
 print(listOfNums)
 
 for i in range(5):
-    val = int(input(f"Gimme an interger-{str(i)} :"))
+    val = int(input(f"Gimme an interger->{str(i+1)} :"))
     listOfNums.append(val)
 
-# average score 
+# average score
 for i in range(len(listOfNums)):
     avg += listOfNums[i]
 
-print(f"Average of {avg} given {len(listOfNums)} Numbers is : {round(avg/len(listOfNums))}")
-
+print(
+    f"Average of {avg} given {len(listOfNums)} Numbers is : {round(avg/len(listOfNums))}"
+)
