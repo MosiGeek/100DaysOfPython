@@ -27,3 +27,5 @@ for i in range(len(listOfNums)):
 print(
     f"Average of {avg} given {len(listOfNums)} Numbers is : {round(avg/len(listOfNums))}"
 )
+
+print("************************************8")
