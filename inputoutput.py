@@ -28,4 +28,7 @@ print(
     f"Average of {avg} given {len(listOfNums)} Numbers is : {round(avg/len(listOfNums))}"
 )
 
-print("************************************8")
+# create a function to add numbers
+
+
+
