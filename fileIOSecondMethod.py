@@ -10,6 +10,7 @@
 
 asian_cities = ['Tokyo', 'Delhi', 'Shanghai', 'Sao Paulo', 'Mumbai', 'Dhaka', 'Mexico City', 'Cairo', 'Bangkok', 'Karachi']
 
+
 with open("holiday.txt","w") as txtfile:
     for city in asian_cities:
         txtfile.write(city+"\n")    
@@ -21,8 +22,10 @@ with open("holiday.txt","w") as txtfile:
 
 # holiday.close()    
 
+
 with open("holiday.txt","r") as txtfile:
     for line in txtfile:
         print(line)
     # out = txtfile.read()  
     # print(out)  
+    
