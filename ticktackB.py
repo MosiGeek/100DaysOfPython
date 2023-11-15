@@ -1,4 +1,4 @@
-def draw():
+def drawGrid():
     for i in range(5):
         if i%2 == 0:
             # print(even)
@@ -12,4 +12,37 @@ def draw():
         else:
             print("_____")    
             
-draw()            
+# drawGrid()      
+
+
+
+Player = 1
+gridKey = [[" "," "," "],[" "," "," "],[" "," "," "]]  #row by colum   
+
+print(gridKey)
+
+while(True):
+    if Player == 1:
+        print(f"Current Player - {Player}")
+        
+        row = int(input("Enter Row :"))
+        col = int(input("Enter column :"))
+        
+        gridKey[row][col] = "X"
+        
+        print(gridKey)
+        Player = 2
+    else:
+        print(f"Current Player {Player}")
+        
+        row = int(input("Enter Row :"))
+        col = int(input("Enter Col :"))
+        
+        gridKey[row][col] = "O"
+        
+        print(gridKey)
+        Player = 1
+        
+    
+
+    
