@@ -31,13 +31,16 @@ while True:
     row = int(input("Enter Row :"))
     col = int(input("Enter column :"))
     
-    if Player == 1:
-        gridKey[col][row] = "X"
-        Player = 2
-    else:
+    
+    if gridKey[col][row] == " ":
         
-        gridKey[col][row] = "O"
-        Player = 1
+        if Player == 1:
+            gridKey[col][row] = "X"
+            Player = 2
+        else:
+            
+            gridKey[col][row] = "O"
+            Player = 1
         
     print(gridKey)
     drawGrid(gridKey)
