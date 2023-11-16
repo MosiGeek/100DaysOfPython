@@ -9,7 +9,7 @@ def drawGrid(gkey):
                 if col % 2 == 0:
                     val_col = int(col/2)
                     
-                    print(gkey[val_row][val_col], end="")
+                    print(gkey[val_col][val_row], end="")
                 else:
                     print("|", end="")
             print()
@@ -32,11 +32,11 @@ while True:
     col = int(input("Enter column :"))
     
     if Player == 1:
-        gridKey[row][col] = "X"
+        gridKey[col][row] = "X"
         Player = 2
     else:
         
-        gridKey[row][col] = "O"
+        gridKey[col][row] = "O"
         Player = 1
         
     print(gridKey)
