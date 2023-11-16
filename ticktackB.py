@@ -1,69 +1,15 @@
-# possible_val = [
-#     [["X", "O", "X"], [" ", "X", "O"], ["X", "O", " "]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["O", "X", " "]],
-#     [["X", "O", "X"], ["X", "O", " "], [" ", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", " ", "O"]],
-#     [["X", "O", "X"], ["O", "X", "X"], ["X", " ", "O"]],
-#     [["X", "O", "X"], ["X", "O", "O"], ["O", "X", " "]],
-#     [["X", "O", "X"], ["X", "O", " "], [" ", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", " ", "O"]],
-#     [["X", "O", "X"], ["O", "X", "X"], ["X", "O", " "]],
-#     [["X", "O", "X"], ["O", "X", " "], [" ", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", " ", "O"]],
-#     [["X", "O", "X"], ["X", "O", "O"], ["O", "X", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", " ", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "O", "X"]],
-#     [["X", "O", "X"], [" ", "O", "X"], ["X", "O", "X"]],
-#     [["X", "O", "X"], ["O", "X", "O"], ["X", "X", "O"]],
-#     [["X", "O", "X"], ["O", "X", " "], ["X", "X", "O"]],
-# ]
 
-# with open("possible.txt","w") as possible:
-#     for val in possible_val:
-#         possible.write(str(val)+"\n")
-#     print("Done")
-
-
-def drawGrid():
-    for i in range(5):
-        if i % 2 == 0:
+def drawGrid(gkey):
+    for row in range(5):
+        if row % 2 == 0:
+            val_row = int(row/2)
+            
             # print(even)
-            for j in range(5):
-                if j % 2 == 0:
-                    print(" ", end="")
+            for col in range(5):
+                if col % 2 == 0:
+                    val_col = int(col/2)
+                    
+                    print(gkey[val_col][val_row], end="")
                 else:
                     print("|", end="")
             print()
@@ -72,40 +18,34 @@ def drawGrid():
             print("_____")
 
 
-drawGrid()
-
-
 Player = 1
 gridKey = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]  # row by column
 
 print(gridKey)
+drawGrid(gridKey)
 
 while True:
+    
+    print(f"Current Player : {Player}")
+
+    row = int(input("Enter Row :"))
+    col = int(input("Enter column :"))
+    
     if Player == 1:
-        print(f"Current Player - {Player}")
-
-        row = int(input("Enter Row :"))
-        col = int(input("Enter column :"))
-
-        gridKey[row][col] = "X"
-
-        print(gridKey)
+        gridKey[col][row] = "X"
         Player = 2
     else:
-        print(f"Current Player {Player}")
-
-        row = int(input("Enter Row :"))
-        col = int(input("Enter Col :"))
-
-        gridKey[row][col] = "O"
-
-        print(gridKey)
+        
+        gridKey[col][row] = "O"
         Player = 1
+        
+    print(gridKey)
+    drawGrid(gridKey)
 
 
-# counter = 0
-# while counter <= 2:
-#     for i in gridKey[counter]:
-#         print(i, end=" ")
-#     print("\n")
-#     counter += 1
+# # counter = 0
+# # while counter <= 2:
+# #     for i in gridKey[counter]:
+# #         print(i, end=" ")
+# #     print("\n")
+# #     counter += 1
