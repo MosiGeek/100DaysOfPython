@@ -1,14 +1,2 @@
-J Holiday
-20/11/89
-U.S
-987X34
-31/12/30
-Hip Hop Artist
-
-Eyleen
-08/02/00
-Jamaican
-4354FW2
-17/12/30
-Nurse
-
+Clara,30/11/00,Southern Zambezian,9876XZ0,31/12/25,Doctor,
+Vince,03/08/96,Rwandan,123QW45,31/12/30,Pilot,

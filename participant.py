@@ -34,10 +34,16 @@
 # with open("tourist.txt","w") as tourist:
 #     for tdata in touristData:
 #         for data in tdata:
-#             tourist.write(data+"\n")
+#             tourist.write(data+",")
 #         tourist.write("\n")    
 
+age = {}
 
 with open("tourist.txt","r") as data:
-    tempdata = data.read()
-    print(tempdata)       
+    for line in data:
+        temp = line.strip("\n").rstrip(",").split(",")  
+        
+
+
+
+        
