@@ -68,6 +68,38 @@ print(phone_number)
 
 print(phone_number.keys())
 
+# likewise if you want to access only the values of the dictionary there is the values() method 
+
+print(phone_number.values())
+
+# items() method will create tuple from the dictionary  
+
+print(phone_number.items())
+
+print(dict(phone_number.items()))
+
+for i in phone_number:
+    for j in phone_number[i]:
+        print(j,phone_number[i][j])
+        
+print("############################################################################")
+
+for i in phone_number.items():
+    print(i)
+    
+# copying one dictionary to another dictionary  
+
+phone_num2 = phone_number.copy()
+
+
+
+print(phone_num2)
+
+# getting the length of a dictionary 
+
+print(len(phone_num2))    
+        
+    
 
 phone_number.clear() #this will clear the whole dictionary
 
