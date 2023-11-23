@@ -63,6 +63,13 @@ print(phone_number.popitem()) #removes the last item and returns its key and val
 
 print(phone_number)
 
+
+# if you want to access only keys in the dictonary then use the key() method 
+
+print(phone_number.keys())
+
+
 phone_number.clear() #this will clear the whole dictionary
 
 print(phone_number)
+
