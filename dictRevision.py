@@ -30,6 +30,26 @@ phone_number["peater"] = {5656565,2323,0o245,8989}
 
 # one way to access the values in the dictionary  using get method
 
-print(phone_number.get("vaskr")) # get method is safe to use incase there is a typo or keys is not present
+# print(phone_number.get("vaskr")) # get method is safe to use incase there is a typo or keys is not present
 
-print(phone_number["Skidy"])
+# print(phone_number["Skidy"])
+
+print("*******************************************************************")
+
+# Home Work
+
+# data = {
+#     1:'Jenny',
+#     2:'Ram',
+#     0:'Mohan'
+# }
+
+# print(data.get(0))  #output is Mohan
+
+
+print(phone_number)
+
+# use the del keyword to remove keys and values from a dictionary  
+del phone_number["peater"]
+
+print(phone_number)
