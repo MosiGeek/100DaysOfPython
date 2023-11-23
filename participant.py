@@ -1,3 +1,4 @@
+
 # # collecting and writing tourist data to an external file 
 
 # touristData = []
@@ -38,11 +39,17 @@
 #         tourist.write("\n")    
 
 age = {}
+dob = []
 
 with open("tourist.txt","r") as data:
     for line in data:
-        temp = line.strip("\n").rstrip(",").split(",")  
-        
+        temp = line.strip("\n").rstrip(",").split(",")
+        dob.append(temp[1])  
+            
+age = set(dob)        
+
+print(age)      
+
 
 
 
