@@ -58,3 +58,11 @@ print(phone_number)
 print(phone_number.pop('Skidy'))
 
 print(phone_number)
+
+print(phone_number.popitem()) #removes the last item and returns its key and value
+
+print(phone_number)
+
+phone_number.clear() #this will clear the whole dictionary
+
+print(phone_number)
