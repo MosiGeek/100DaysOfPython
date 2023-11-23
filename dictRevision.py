@@ -53,3 +53,8 @@ print(phone_number)
 del phone_number["peater"]
 
 print(phone_number)
+
+# pop removes the specified item and return the corresponding value
+print(phone_number.pop('Skidy'))
+
+print(phone_number)
