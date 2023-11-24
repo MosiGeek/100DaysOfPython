@@ -20,7 +20,8 @@ def drawGrid(gkey):
 # function to check whether the values of the horizontal, vetical, diagonal axis are equal, if equal then return winner
 def check_winner(gKey, turn):
     gridKey = gKey
-    winning_player = str(turn.pop())
+    # winning_player = str(turn.pop())
+    winning_player = str(turn)
     if (
         bool(gridKey[0][0] == gridKey[0][1] == gridKey[0][2])
         and (gridKey[0][0] == gridKey[0][1] == gridKey[0][2] != " ")
@@ -39,7 +40,9 @@ def check_winner(gKey, turn):
         or bool(gridKey[0][0] == gridKey[1][1] == gridKey[2][2])
         and (gridKey[0][0] == gridKey[1][1] == gridKey[2][2] != " ")
     ):
-        print(f"*** Player {winning_player} WIIIIIINNS !!!*** GAME OVER")
+        # print(f"*** Player {winning_player} WIIIIIINNS !!!*** GAME OVER")
+        return "W"
+        
     elif (
         gridKey[0][0] != " "
         and gridKey[0][1] != " "
@@ -51,7 +54,9 @@ def check_winner(gKey, turn):
         and gridKey[2][1] != " "
         and gridKey[2][2] != " "
     ):
-        print("DRAAAAAAAAAWW!!!")
+        # print("DRAAAAAAAAAWW!!!")
+        return "D"
+        
 
 
 Player = 1
@@ -82,4 +87,10 @@ while True:
 
     # print(gridKey)
     drawGrid(gridKey)
-    check_winner(gridKey, turn)
+    
+    if check_winner(gridKey, turn) == "W":
+        print(check_winner(gridKey,turn))
+        break
+    elif check_winner(gridKey, turn) == "D":
+        break
+    
