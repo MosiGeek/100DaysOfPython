@@ -1,0 +1,3 @@
+['Samantha', 'Japan', '20']
+['Pinkie', 'China', '18']
+['Henrika', 'South Africa', '23']
