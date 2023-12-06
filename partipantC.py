@@ -15,15 +15,16 @@ while (regParticipants < ParticipantNumber):
     ParticipantData.append(temp)
     regParticipants += 1
 
-print(ParticipantData) 
+# print(ParticipantData) 
 
-for participant in ParticipantData:
-    print(participant)   
+# for participant in ParticipantData:
+#     print(participant)   
 
 with open("girls.txt","w") as data:
     for participant in ParticipantData:
         for row in participant:
             data.write(str(row))
+            data.write(" ")
         data.write("\n")
 
 # with open("girls.txt","r") as data:
