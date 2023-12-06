@@ -47,8 +47,8 @@ with open("girls.txt","r") as file:
 
 print(girls)
 
-for i in girls:
-    print(i[2])
+for age in girls:
+    print(age[2])
 
 
         
