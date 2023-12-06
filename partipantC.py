@@ -45,10 +45,15 @@ with open("girls.txt","r") as file:
 
 # print(min)
 
-print(girls)
+# print(girls)
 
+maxAge = 0
 for age in girls:
-    print(age[2])
+    # print(age[2])
+    if maxAge >= int(age[2]):
+        print(f"The Oldest Age in the group is {maxAge}")
+    else:
+        maxAge = int(age[2])    
 
 
         
