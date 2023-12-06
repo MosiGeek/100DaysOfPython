@@ -27,9 +27,30 @@
 #             data.write(" ")
 #         data.write("\n")
 
+
+girls = []
+
 with open("girls.txt","r") as file:
     for line in file:
-        print(line)    
+        temp = line.strip(" ").split() 
+        girls.append(temp)  
+
+# min = 100
+# i = 0
+# while i <= 2:
+#     # print(girls[i][2])
+#     if min > int(girls[i][2]):
+#         min = int(girls[i][2])
+#     i += 1
+
+# print(min)
+
+print(girls)
+
+for i in girls:
+    print(i[2])
+
+
         
 
 
