@@ -7,9 +7,9 @@
 #         Action(s)    
         
 class Team:
-    def __init__(self):
-            self.TeamName = "NaN"
-            self.TeamOrigin = "NaN"
+    def __init__(self,Name,Origin):
+            self.TeamName = Name
+            self.TeamOrigin = Origin
 
     def setTeamName(self,name):
           self.TeamName = name    
@@ -18,11 +18,15 @@ class Team:
           self.TeamOrigin = origin          
 
 
-Team1 = Team()
+Team1 = Team("","")
+Team2 = Team("Orlando Pirates","South Africa")
 
 # Team1.TeamName = "Barcelona"
 Team1.setTeamName("RealMadrid")
 Team1.setTeamOrigin("Spain")
 
-print(Team1.TeamName)
-print(Team1.TeamOrigin)
+print(f"Team Name: {Team1.TeamName}")
+print(f"Team Origin: {Team1.TeamOrigin}")
+
+print(Team2.TeamName)
+print(Team2.TeamOrigin)
