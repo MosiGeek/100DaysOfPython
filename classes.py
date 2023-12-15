@@ -35,7 +35,7 @@ print(Team3.TeamName)
 print(Team3.TeamOrigin)
 
 class Shapes:
-    def __init__(self,len,heit):
+    def __init__(self,len,heit):  #more of a constructor
             self.Length = len
             self.Height = heit
 
