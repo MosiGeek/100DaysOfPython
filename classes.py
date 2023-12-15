@@ -44,10 +44,16 @@ class Player(Team):
             self.PlayerPoints = 0
 
 Player1 = Player("Christiano","7")
+Player2 = Player("Mbappe","11")
 
 
 Player1.setTeamName("Barcelona")
 
 print(Player1.TeamName,Player1.PlayerName,Player1.PlayerNumber)
 
+
+Player2.setTeamName("Borusia Dotmut")
+Player2.setTeamOrigin("Germany")
+
+print(Player2.TeamName,Player2.TeamOrigin,Player2.PlayerName,Player2.PlayerNumber)
       
