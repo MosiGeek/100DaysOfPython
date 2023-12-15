@@ -34,17 +34,20 @@ print(Team2.TeamOrigin)
 print(Team3.TeamName)
 print(Team3.TeamOrigin)
 
-class Shapes:
-    def __init__(self,len,heit):  #more of a constructor
-            self.Length = len
-            self.Height = heit
 
-    def  triange_area(self,b,h):
-       area = 1/2*b*h
-       return area
     
+class Player(Team):
+      def  __init__(self,playerName="Nan",playerNumber="Nan"):
+            Team.__init__(self)
+            self.PlayerName = playerName
+            self.PlayerNumber = playerNumber
+            self.PlayerPoints = 0
 
-Triangle = Shapes(4,2)
+Player1 = Player("Christiano","7")
 
-print(Triangle.triange_area(Triangle.Length,Triangle.Height))
-    
+
+Player1.setTeamName("Barcelona")
+
+print(Player1.TeamName,Player1.PlayerName,Player1.PlayerNumber)
+
+      
