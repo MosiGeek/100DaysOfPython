@@ -21,6 +21,7 @@ class Team:
 Team1 = Team("","")
 Team2 = Team("Orlando Pirates","South Africa")
 Team3 = Team()
+Team4 = Team("Dynamos","Zimbabwe")
 
 # Team1.TeamName = "Barcelona"
 Team1.setTeamName("RealMadrid")
@@ -33,6 +34,8 @@ print(Team2.TeamName)
 print(Team2.TeamOrigin)
 print(Team3.TeamName)
 print(Team3.TeamOrigin)
+
+print(Team4.TeamName,Team4.TeamOrigin)
 
 
     
