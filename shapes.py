@@ -10,4 +10,4 @@ class Shapes:
 
 Triangle = Shapes(4,2)
 
-print(Triangle.triange_area(Triangle.Length,Triangle.Height))
+print(Triangle.triange_area(Triangle.Length,Triangle.Height),"sqr cm")
