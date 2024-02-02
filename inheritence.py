@@ -5,7 +5,7 @@ class Shapes:
 
     def triangle_area(self,b,h):
         self.area = 1/2*b*h
-        return print(self.area)
+        return print(self.area,"Sqr_CM")
     
 Trian1 = Shapes(6,2)    
 
