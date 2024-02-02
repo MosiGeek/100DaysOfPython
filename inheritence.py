@@ -3,10 +3,10 @@ class Shapes:
         self.base = base
         self.height = height
 
-    def triangle_area(self,b,h):
-        self.area = 1/2*b*h
-        return print(self.area,"Sqr_CM")
+    def triangle_area(self):
+        return print(1/2*self.base*self.height,"sqr_cm")
+        
     
 Trian1 = Shapes(6,2)    
 
-Trian1.triangle_area(Trian1.base,Trian1.height)
+Trian1.triangle_area()
