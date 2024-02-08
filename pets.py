@@ -35,19 +35,14 @@ class Pet():
     def get_pet_play(self):
         return print(self.playful)   
         
-    
-    
+class Dog(Pet):
+    def __init__(self,name,age,hunger_level,playful,breed,fav_toy):
+        Pet.__init__(name,age,hunger_level,playful)
+        self.breed = breed
+        self.fave_toy = fav_toy
 
 
 
 
-Pet_One = Pet("TikiTaka",3,"5",True)    
 
 
-# Pet_One.get_pet_name()
-
-print(Pet_One.name)
-
-Pet_One.name = "Snowball"
-
-print(Pet_One.name)
