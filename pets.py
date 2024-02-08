@@ -37,11 +37,21 @@ class Pet():
         
 class Dog(Pet):
     def __init__(self,name,age,hunger_level,playful,breed,fav_toy):
-        Pet.__init__(name,age,hunger_level,playful)
+        Pet.__init__(self,name,age,hunger_level,playful)
         self.breed = breed
         self.fave_toy = fav_toy
 
+    def wants_to_play(self):
+        if self.playful == True:
+            return ("Dog want to play with " + self.fav_toy)
+        else:
+            return ("Dog does not want to play with " + self.fave_toy)
 
+
+Dogido = Dog("Doink",5,"8",False,"Germany Sherpad", "stick")
+
+
+print(Dogido.wants_to_play())
 
 
 
