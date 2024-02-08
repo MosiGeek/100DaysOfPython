@@ -5,14 +5,43 @@ class Pet():
         self.hunger_level = hunger_level
         self.playful = playful
 
-    def set_pet_name(self,n):
-        self.name = n    
+# setters
+    def set_pet_name(self,name):
+        self.name = name    
 
+    def set_pet_age(self,age):
+        self.age = age 
+
+    def set_pet_level(self,level):
+        self.hunger_level = level   
+
+    def set_playful(self,play):
+        self.playful = play         
+
+
+# getters
     def get_pet_name(self):
         return print(self.name)   
+    
+    def get_pet_age(self):
+        return print(self.age)  
+     
+    def get_pet_name(self):
+        return print(self.name)   
+    
+    def get_pet_hunger(self):
+        return print(self.hunger_level)   
+    
+    def get_pet_play(self):
+        return print(self.playful)   
+        
+    
+    
 
 
-Cat = Pet()    
+
+
+Cat = Pet("TikiTaka",3,"5",True)    
 
 Cat.get_pet_name()
 Cat.set_pet_name("Nija")
