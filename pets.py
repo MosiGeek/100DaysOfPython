@@ -41,9 +41,13 @@ class Pet():
 
 
 
-Cat = Pet("TikiTaka",3,"5",True)    
+Pet_One = Pet("TikiTaka",3,"5",True)    
 
-Cat.get_pet_name()
-Cat.set_pet_name("Nija")
-Cat.get_pet_name()
 
+# Pet_One.get_pet_name()
+
+print(Pet_One.name)
+
+Pet_One.name = "Snowball"
+
+print(Pet_One.name)
