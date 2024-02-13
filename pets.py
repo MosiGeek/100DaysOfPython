@@ -1,8 +1,8 @@
 class Pet:
-    def __init__(self, name="NaN", age=0, hunger_level="NaN", playful=False):
+    def __init__(self, name="NaN", age=0, hunger=False, playful=False):
         self.name = name
         self.age = age
-        self.hunger_level = hunger_level
+        self.hunger = hunger
         self.playful = playful
 
     # setters
@@ -13,7 +13,7 @@ class Pet:
         self.age = age
 
     def set_pet_level(self, level):
-        self.hunger_level = level
+        self.hunger = level
 
     def set_playful(self, play):
         self.playful = play
@@ -26,7 +26,7 @@ class Pet:
         return print(self.age)
 
     def get_pet_hunger(self):
-        return print(self.hunger_level)
+        return print(self.hunger)
 
     def get_pet_play(self):
         return print(self.playful)
@@ -34,11 +34,11 @@ class Pet:
 
 class Dog(Pet):
     def __init__(
-        self, name, age, hunger_level, playful, breed, fav_toy
+        self, name, age, hunger, playful, breed, fav_toy
     ):  # think about additional properties we want the dog to have
        
         Pet.__init__(
-            self, name, age, hunger_level, playful
+            self, name, age, hunger, playful
         )  # calling the initializer of the pet class
         self.breed = breed
         self.fave_toy = fav_toy
@@ -51,7 +51,7 @@ class Dog(Pet):
         )
 
 
-Dogido = Dog("Doink", 5, "8", False, "Germany Sherpad", "stick")
+Dogido = Dog("Doink", 5, False, False, "Germany Sherpad", "stick")
 
 
 print(Dogido.wants_to_play())
