@@ -23,16 +23,20 @@ class Pet:
 
     # getters
     def get_pet_name(self):
-        return print(self.name)
+        return self.name
 
     def get_pet_age(self):
-        return print(self.age)
+        return self.age
 
     def get_pet_hunger(self):
-        return print(self.hunger)
+        return self.hunger
 
     def get_pet_play(self):
-        return print(self.playful)
+        return self.playful
+    
+    def __str__(self):
+        return self.name + " is " + str(self.age) + " years old"
+
 
 
 class Dog(Pet):
@@ -59,10 +63,22 @@ class Cat(Pet):
         self.fav_place_to_sit = place
 
 
-    # making the cat printable
-    def __str__(self):
-        return (self.name + " Likes to sit in " + self.fav_place_to_sit)  
+    # # making the cat printable
+    # def __str__(self):
+    #     return (self.name + " Likes to sit in " + self.fav_place_to_sit)  
 
+
+class Human():
+    def __init__(self,name,pets):
+        # what properties do we want the human to have?
+        self.name = name
+        self.pets = pets
+
+    def hasPets(self):
+        if len(self.pets) != 0:
+            return "yes"
+        else:
+            return "no"
 
 
 
@@ -95,3 +111,20 @@ Pussy.get_pet_name()
 
 print(Pussy)
 print(Dog)
+
+
+print("###########################################################")
+
+yourAverageHuman = Human("Henrika Nova",[Pussy,Dogido])
+
+
+
+print(yourAverageHuman.hasPets())
+
+# print(yourAverageHuman.pets[1])
+
+for i in yourAverageHuman.pets:
+    i.set_playful(True)
+
+for j in yourAverageHuman.pets:
+    print(j.playful)
