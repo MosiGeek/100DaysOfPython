@@ -53,6 +53,13 @@ class Dog(Pet):
             else "Dog does not want to play with " + self.fave_toy
         )
 
+class Cat(Pet):
+    def __init__(self,name,age,hunger,playful,place="NaN"):
+        Pet.__init__(name,age,hunger,playful)
+        self.fav_place_to_sit = place
+
+
+
 
 Dogido = Dog("Doink", 5, False, False, "Germany Sherpad", "stick")
 
@@ -63,11 +70,9 @@ Dogido.playful = True
 print(Dogido.wants_to_play())
 
 
-
-# print("#######################################################")
-
 Dogido.hunger = True
 Dogido.get_pet_hunger()
 
-
 Dogido.get_pet_name()
+
+print("#######################################################")
