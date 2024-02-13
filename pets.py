@@ -1,4 +1,5 @@
 # N.B when inside a class always include a self 
+# if we want to access the properties of a class always use a self
 
 class Pet:
     def __init__(self, name="NaN", age=0, hunger=False, playful=False):
