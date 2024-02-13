@@ -12,7 +12,7 @@ class Pet:
     def set_pet_age(self, age):
         self.age = age
 
-    def set_pet_level(self, level):
+    def set_pet_hunger(self, level):
         self.hunger = level
 
     def set_playful(self, play):
@@ -58,6 +58,13 @@ print(Dogido.wants_to_play())
 Dogido.playful = True
 
 print(Dogido.wants_to_play())
+
+
+
+# print("#######################################################")
+
+Dogido.hunger = True
+Dogido.get_pet_hunger()
 
 
 Dogido.get_pet_name()
