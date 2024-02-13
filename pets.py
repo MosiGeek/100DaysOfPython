@@ -77,6 +77,7 @@ Dogido.get_pet_name()
 
 print("#######################################################")
 
+# create a typical cat 
 Pussy = Cat("Skidy",2,True,True,"Sofa")
 
 
