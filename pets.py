@@ -33,7 +33,7 @@ class Pet():
         return print(self.playful)   
         
 class Dog(Pet):
-    def __init__(self,name,age,hunger_level,playful,breed,fav_toy):
+    def __init__(self,name,age,hunger_level,playful,breed,fav_toy): # thing about additional properties we want the dog to have
         Pet.__init__(self,name,age,hunger_level,playful)
         self.breed = breed
         self.fave_toy = fav_toy
