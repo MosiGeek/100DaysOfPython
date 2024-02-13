@@ -43,7 +43,7 @@ class Dog(Pet):
 
     def wants_to_play(self):
         if self.playful == True:
-            return ("Dog want to play with " + self.fav_toy)
+            return ("Dog wants to play with " + self.fave_toy)
         else:
             return ("Dog does not want to play with " + self.fave_toy)
 
@@ -52,6 +52,10 @@ Dogido = Dog("Doink",5,"8",False,"Germany Sherpad", "stick")
 
 
 print(Dogido.wants_to_play())
+Dogido.playful = True
+
+print(Dogido.wants_to_play())
+
 
 
 
