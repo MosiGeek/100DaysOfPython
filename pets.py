@@ -59,6 +59,11 @@ class Cat(Pet):
         self.fav_place_to_sit = place
 
 
+    # making the cat printable
+    def __str__(self):
+        return (self.name + " Likes to sit in " + self.fav_place_to_sit)  
+
+
 
 
 Dogido = Dog("Doink", 5, False, False, "Germany Sherpad", "stick")
@@ -83,7 +88,9 @@ Pussy = Cat("Skidy",2,True,True,"Sofa")
 
 print(Pussy.fav_place_to_sit)
 
-Pussy.fav_place_to_sit = "Door Mat"
+# Pussy.fav_place_to_sit = "Door Mat"
 
-print(Pussy.fav_place_to_sit)
 Pussy.get_pet_name()
+
+
+print(Pussy)
