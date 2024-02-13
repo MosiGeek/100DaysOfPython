@@ -55,7 +55,7 @@ class Dog(Pet):
 
 class Cat(Pet):
     def __init__(self,name,age,hunger,playful,place="NaN"):
-        Pet.__init__(name,age,hunger,playful)
+        Pet.__init__(self,name,age,hunger,playful)
         self.fav_place_to_sit = place
 
 
@@ -76,3 +76,13 @@ Dogido.get_pet_hunger()
 Dogido.get_pet_name()
 
 print("#######################################################")
+
+Pussy = Cat("Skidy",2,True,True,"Sofa")
+
+
+print(Pussy.fav_place_to_sit)
+
+Pussy.fav_place_to_sit = "Door Mat"
+
+print(Pussy.fav_place_to_sit)
+Pussy.get_pet_name()
