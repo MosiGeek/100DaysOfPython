@@ -1,6 +1,8 @@
 # N.B when inside a class always include a self 
 # if we want to access the properties of a class always use a self
 
+# a class is just a general way of grouping things that are related together
+
 class Pet:
     def __init__(self, name="NaN", age=0, hunger=False, playful=False):
         self.name = name
@@ -128,3 +130,5 @@ for i in yourAverageHuman.pets:
 
 for j in yourAverageHuman.pets:
     print(j.name)
+
+print(yourAverageHuman.pets[1].breed)    
