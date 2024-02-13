@@ -127,4 +127,4 @@ for i in yourAverageHuman.pets:
     i.set_playful(True)
 
 for j in yourAverageHuman.pets:
-    print(j.playful)
+    print(j.name)
