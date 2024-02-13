@@ -94,3 +94,4 @@ Pussy.get_pet_name()
 
 
 print(Pussy)
+print(Dog)
