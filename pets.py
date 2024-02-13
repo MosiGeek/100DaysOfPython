@@ -24,11 +24,8 @@ class Pet():
         return print(self.name)   
     
     def get_pet_age(self):
-        return print(self.age)  
-     
-    def get_pet_name(self):
-        return print(self.name)   
-    
+        return print(self.age)   
+       
     def get_pet_hunger(self):
         return print(self.hunger_level)   
     
@@ -56,6 +53,8 @@ Dogido.playful = True
 
 print(Dogido.wants_to_play())
 
+
+Dogido.get_pet_name()
 
 
 
