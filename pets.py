@@ -1,3 +1,5 @@
+# N.B when inside a class always include a self 
+
 class Pet:
     def __init__(self, name="NaN", age=0, hunger=False, playful=False):
         self.name = name
