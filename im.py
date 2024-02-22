@@ -1,13 +1,11 @@
-# importing in python 
+nums = [1,43,21,400,56,69,0,2,4]
 
-import random
+print(nums)
 
-# # random.seed(50)
-# dice = random.randint(1,6)
-# print(dice)
-# # if dice == 6:
-# #     roll()
+nums.sort()
 
-print(round(random.random(),2))
+print(nums)
 
-print(random.uniform(1,6))
+print(len(nums))
+
+print(nums[-3:])
