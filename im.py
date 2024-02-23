@@ -9,3 +9,6 @@ print(nums)
 print(len(nums))
 
 print(nums[-3:])
+
+for i in nums:
+    print(type(i))
