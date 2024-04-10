@@ -4,10 +4,13 @@
 
 # print(f"{km} km")
 
-import tkinter as tk
-from tkinter import ttk
+from tkinter import *
+from ttkbootstrap.constants import *
+import ttkbootstrap as tb
 
-#window
-window = tk.Tk()
+root  = tb.Window(themename="minty")
 
-window.mainloop()
+root.title("Dukto")
+root.geometry('500x900')
+
+root.mainloop()
